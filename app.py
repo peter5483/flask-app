@@ -6,7 +6,7 @@
 # # all_file_name2 = os.listdir(dir_path)
 
 # os.system("echo 99 | translate zh-TW")
-
+# import gunicorn
 import json
 from flask import Flask, render_template, request, after_this_request
 from flask_socketio import SocketIO
@@ -37,3 +37,4 @@ def tt():
 if __name__ == '__main__':
   socketio.run(app, host='0.0.0.0', port=443, debug=True)
 #   socketio.run(app, debug=True)
+
